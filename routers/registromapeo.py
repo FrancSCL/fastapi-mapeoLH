@@ -302,6 +302,7 @@ def eliminar_registro_mapeo(registro_id: str, _: str = Depends(get_current_user)
                 cur.execute("SELECT id FROM mapeo_fact_registromapeo WHERE id = %s", (registro_id,))
                 if not cur.fetchone():
                     raise HTTPException(status_code=404, detail="Registro de mapeo no encontrado")
+                cur.execute("DELETE FROM mapeo_fact_registro WHERE id_mapeo = %s", (registro_id,))
                 cur.execute("DELETE FROM mapeo_fact_registromapeo WHERE id = %s", (registro_id,))
         return {"mensaje": "Registro de mapeo eliminado exitosamente"}
     except HTTPException:
