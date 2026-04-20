@@ -6,6 +6,7 @@ from routers import (
     auth, usuarios, cuarteles, hileras, plantas,
     variedades, especies, tipoplanta,
     registromapeo, registros, estadocatastro, opciones,
+    qr,
 )
 
 app = FastAPI(title="API Mapeo Agrícola", version="3.0")
@@ -30,6 +31,7 @@ app.include_router(registromapeo.router,  prefix="/api/registromapeo",  tags=["r
 app.include_router(registros.router,      prefix="/api/registros",      tags=["registros"])
 app.include_router(estadocatastro.router, prefix="/api/estadocatastro", tags=["estadocatastro"])
 app.include_router(opciones.router,       prefix="/api/opciones",       tags=["opciones"])
+app.include_router(qr.router,            prefix="/api/qr",             tags=["qr"])
 
 
 @app.get("/")
