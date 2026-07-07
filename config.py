@@ -15,8 +15,8 @@ class Config:
 
     # Cloud SQL producción
     CLOUD_SQL_HOST = os.getenv("CLOUD_SQL_HOST", "34.41.120.220")
-    CLOUD_SQL_USER = os.getenv("CLOUD_SQL_USER", "UserApp")
-    CLOUD_SQL_PASSWORD = os.getenv("CLOUD_SQL_PASSWORD", "&8y7c()tu9t/+,6`")
+    CLOUD_SQL_USER = os.getenv("CLOUD_SQL_USER", "fsoto")
+    CLOUD_SQL_PASSWORD = os.getenv("CLOUD_SQL_PASSWORD", "")
     CLOUD_SQL_DB = os.getenv("CLOUD_SQL_DB", "lahornilla_base_normalizada")
     CLOUD_SQL_PORT = int(os.getenv("CLOUD_SQL_PORT", 3306))
     CLOUD_SQL_CONNECTION_NAME = os.getenv(

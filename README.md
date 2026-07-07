@@ -52,7 +52,7 @@ API_FASTAPI/
 | Variable | Descripción | Default |
 |---|---|---|
 | `CLOUD_SQL_HOST` | IP instancia Cloud SQL | 34.41.120.220 |
-| `CLOUD_SQL_USER` | Usuario DB | UserApp |
+| `CLOUD_SQL_USER` | Usuario DB | fsoto |
 | `CLOUD_SQL_PASSWORD` | Contraseña DB | — |
 | `CLOUD_SQL_DB` | Nombre DB | lahornilla_base_normalizada |
 | `CLOUD_SQL_CONNECTION_NAME` | Para socket Unix en Cloud Run | gestion-la-hornilla:us-central1:gestion-la-hornilla |
